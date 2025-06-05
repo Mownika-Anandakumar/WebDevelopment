@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mownika 1000 Times</title>
+  <style>
+    body {
+      background: #111;
+      color: #0d688bee;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .name {
+      font-size: 20px;
+      margin: 5px;
+      animation: bounceFade 1.5s ease-in-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes bounceFade {
+      0% {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      50% {
+        transform: translateY(10px);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    for (let i = 1; i <= 1000; i++) {
+      const span = document.createElement('span');
+      span.className = 'name';
+      span.textContent = 'Mownika ';
+      document.body.appendChild(span);
+    }
+  </script>
+</body>
+</html>
